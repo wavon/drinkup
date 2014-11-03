@@ -18,14 +18,19 @@
         <h1>Drink Up!</h1>
      </header>
 
+     <nav id="slider" class="slider">
+      <ul>
+        <li><a href="#article1">Article 1</a></li>
+        <li><a href="#article2">Article 2</a></li>
+        <li><a href="#article3">Article 3</a></li>
+      </ul>
+     </nav>
+
+
+     <div>
+        <section class="main-container">
+
        
-  
-    
-
-
-     <div style="position:relative; TOP: 150px; LEFT: 0px;">
-      <section class="main-container">
-
        <img class="logo" src="img/logo.svg" alt="drink up logo">
       
     
@@ -51,13 +56,15 @@
           </article>
      
         </section>
-      </div>
+     </div>
 
 
 
 
   <footer>
-    <div class="icon-menu"><span class="fa fa-bars"></span>Menu
+    <div class="icon-menu">
+    <button onclick="document.getElementById('slider').classList.toggle('open');"><span class="fa fa-bars"></span>Menu
+    </button>
     </div>
   </footer>
 
