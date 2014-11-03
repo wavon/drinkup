@@ -1,0 +1,76 @@
+/* ========================
+General styles
+======================== */
+
+html {
+   font-size: 100%;
+   line-height: 1;
+   -moz-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+header {
+  display: block;
+  text-align: center;
+  background: #fff;
+  padding: 0.25em 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+
+
+
+/* ========================
+Navigation styles
+======================== */
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+nav li {
+   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon-menu {
+  font-size: 1em;
+  font-family: "Open Sans";
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.5em;
+  cursor: pointer;
+  padding: .5em 0 .5em .5em;
+  text-transform: uppercase;
+  background-color: green;
+}
+
+.icon-menu span {
+  color: #fff;
+  margin-right: .5em;
+}
+
+/* ========================
+Media queries
+======================== */
+
+/* none in version 2 */
