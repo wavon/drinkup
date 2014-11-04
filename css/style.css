@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+/*  background-color: blue;*/
 }
 
 .logo {
@@ -32,7 +33,7 @@ header {
 }
 
 .main-container {
-  padding: 4.25em 0.25em 2em; 
+  padding: 4.25em 0.25em 0 2em; 
 }
 
 
@@ -45,7 +46,7 @@ Navigation styles
   float: left;
   overflow-y: hidden;
   max-width: 0; 
-  height: 100%;
+  min-height: 5em;
 
   transition-property: all;
   transition-duration: 3s;
@@ -54,6 +55,7 @@ Navigation styles
 
 .slider.open {
   max-width: 400px;
+  min-height: 10em;
 }
 
 footer {
