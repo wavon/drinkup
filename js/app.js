@@ -6,14 +6,14 @@ var mainNav = function() {
     }, 200);
 
     $('.main-container').animate({
-      left: "285px"
+      left: "180px"
     }, 200);
   });
 
   /* Then push them back on clicking the X */
   $('.main-nav').click(function() {
     $('.main-nav').animate({
-      left: "-285px"
+      left: "-180px"
     }, 200);
 
     $('.main-container').animate({
