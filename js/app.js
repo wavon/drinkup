@@ -1,3 +1,4 @@
+
 var mainNav = function() {
   /* Push the body and the icon nav to the right by 285px over 200ms */
   $('.icon-menu').click(function() {
@@ -24,4 +25,6 @@ var mainNav = function() {
 
 
 $(document).ready(mainNav);
+
+
 
