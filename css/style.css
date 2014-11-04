@@ -22,7 +22,7 @@ body {
 }
 
 h2 {
-  margin-top: 1em;
+  margin-top: 1.4em;
   margin-bottom: 0;
 }
 
@@ -50,15 +50,23 @@ header h1 {
   margin-top: 14px;
 }
 
-/* section with main content */
+/* section with main article content */
 .main-container {
   padding: 70px 14px 14px 14px;
   min-height: 100%;
-  margin-bottom: -40px;
-  background: rgb(249, 234, 234);
+  margin-bottom: -52px;
+  background: rgb(249, 240, 207);
   position: relative;
   left: 0;
   margin: 0;
+}
+
+.picture {
+  border-radius: 10%;
+  height: 32px;
+    width: 32px;
+    margin: 6px 10px 0 2px;
+    float: left;
 }
 
 article {
@@ -70,20 +78,23 @@ article {
   height: 100px;
 }
 
+
 /* ========================
 Navigation styles
 ======================== */
 
 /* Initial menu */
 .main-nav {
-  left: -285px; /* start at negative left */
+  left: -100em; /* start at negative left */
   height: 100%;
   position: fixed;
-  width: 285px;
+  width: 180em;
 }
 
 nav li {
    list-style: none;
+   font-size: 1.2em;
+   padding-bottom: 1.2em;
 }
 
 a {
@@ -92,7 +103,7 @@ a {
 
 /* footer nav icon container */
 .icon-menu {
-  height: 40px;
+  height: 52px;
   background-color: rgb(59, 200, 186);
   position: fixed;
   bottom: 0;
@@ -100,18 +111,24 @@ a {
 }
 
 .icon-menu p {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "Open Sans";
   font-weight: 300;
   color: #fff;
   text-transform: uppercase;
-  padding: 8px 1em;
+  padding: 8px 1em 1em 1em;
+  margin-top: 0;
 }
 
 .icon-menu span {
+  font-size: 1em;
   color: #fff;
   margin-right: .5em;
 }
+
+
+
+
 
 /* ========================
 Media queries
