@@ -56,12 +56,9 @@ header h1 {
   min-height: 100%;
   margin-bottom: -40px;
   background: rgb(249, 234, 234);
-}
-
-section:after {
-  content: " ";
-  display: block;
-  height: 40px;
+  position: relative;
+  left: 0;
+  margin: 0;
 }
 
 article {
@@ -79,10 +76,10 @@ Navigation styles
 
 /* Initial menu */
 .main-nav {
-  left: -120px; /* start at negative left */
+  left: -285px; /* start at negative left */
   height: 100%;
   position: fixed;
-  width: 120px;
+  width: 285px;
 }
 
 nav li {
@@ -97,6 +94,9 @@ a {
 .icon-menu {
   height: 40px;
   background-color: rgb(59, 200, 186);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .icon-menu p {
