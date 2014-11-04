@@ -19,9 +19,21 @@ body {
   height: 100px;
 }
 
+.main-container {
+  height: 100%;
+  width: 100%;
+}
+
 /* ========================
 Navigation styles
 ======================== */
+
+.main-nav {
+  left: -13em;
+  height: 100%;
+  position: fixed;
+  width: 13em;
+}
 
 footer {
   width: 100%;
@@ -37,13 +49,19 @@ a {
   text-decoration: none;
 }
 
+button {
+  width: 24px;
+  height: 24px;
+  color: red;
+  padding: 40px;
+}
+
 .icon-menu {
   font-size: 1em;
   font-family: "Open Sans";
   font-weight: 300;
   color: #fff;
   line-height: 1.5em;
-  cursor: pointer;
   padding: .5em 0 .5em .5em;
   text-transform: uppercase;
   background-color: green;
