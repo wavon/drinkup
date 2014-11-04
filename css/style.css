@@ -19,6 +19,7 @@ html {
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  background-color: rgb(249, 240, 207);
 }
 
 h2 {
@@ -99,6 +100,16 @@ nav li {
 
 a {
   text-decoration: none;
+  color: #40b2a8;
+}
+
+a:hover {
+  color: #249393;
+  font-weight: 600;
+}
+
+a:visited {
+  color: #40b2a8; 
 }
 
 /* footer nav icon container */
