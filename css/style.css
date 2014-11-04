@@ -61,6 +61,14 @@ header h1 {
   margin: 0;
 }
 
+.picture {
+  border-radius: 10%;
+  height: 32px;
+    width: 32px;
+    margin: 6px 10px 0 2px;
+    float: left;
+}
+
 article {
   overflow: hidden;
 }
@@ -69,6 +77,13 @@ article {
   width: 100px;
   height: 100px;
 }
+
+
+.main-container {
+  padding: 4.25em 0.25em 0 2em; 
+}
+
+
 
 /* ========================
 Navigation styles
@@ -116,6 +131,10 @@ a {
   color: #fff;
   margin-right: .5em;
 }
+
+
+
+
 
 /* ========================
 Media queries
