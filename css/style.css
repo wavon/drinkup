@@ -56,7 +56,6 @@ header h1 {
   padding: 70px 14px 14px 14px;
   min-height: 100%;
   margin-bottom: -52px;
-  background: rgb(249, 240, 207);
   position: relative;
   left: 0;
   margin: 0;
@@ -89,7 +88,8 @@ Navigation styles
   left: -100em; /* start at negative left */
   height: 100%;
   position: fixed;
-  width: 180em;
+  top: 70px;
+  width: 180px;
 }
 
 nav li {
@@ -170,12 +170,9 @@ Media queries
     }
 
     .icon-menu {
-      visibility: hidden;
+      display: none;
     }
 
-    .picture {
-      image: url("img/smoothie2md.jpg")
-    }
 
 }
   
