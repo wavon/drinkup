@@ -145,4 +145,37 @@ a:visited {
 Media queries
 ======================== */
 
-/* none in version 2 */
+@media screen and (min-width: 480px){
+  body {
+      font-size: 110%;
+      }
+  
+    h1 {
+      font-size: 3em;
+    }
+
+    .logo {
+      display: block;
+    }
+
+    .main-nav {
+        left: 0; 
+        margin: 0 0s.5%;
+        max-width: 25%;
+      }
+
+    .main-container {
+      left: 25%; 
+      max-width: 70%;
+    }
+
+    .icon-menu {
+      visibility: hidden;
+    }
+
+    .picture {
+      image: url("img/smoothie2md.jpg")
+    }
+
+}
+  
