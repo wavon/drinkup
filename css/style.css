@@ -56,7 +56,7 @@ header h1 {
   padding: 70px 14px 14px 14px;
   min-height: 100%;
   margin-bottom: -52px;
-  
+  position: relative;
   left: 0;
   margin: 0;
 }
@@ -176,13 +176,20 @@ Media queries
     .main-container {
       left: 25%; 
       max-width: 65%;
-      position: fixed;
+      position: relative;
     }
 
     .icon-menu {
       display: none;
     }
 
+    .picture {
+    border-radius: 10%;
+    height: 200px;
+    width: 200px;
+    margin: 6px 10px 0 2px;
+    float: right;
+}
 
 }
   
