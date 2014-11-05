@@ -1,4 +1,5 @@
 var mainNav = function() {
+
   /* Push the body and the icon nav to the right by 180px over 200ms */
   $('.icon-menu').click(function() {
     $('.main-nav').animate({
@@ -16,11 +17,12 @@ var mainNav = function() {
       left: "-180px"
     }, 200);
 
-    $('.main-container').animate({
-      left: "0px"
-    }, 200);
-  });
+   $('.main-container').animate({
+     left: "0px"
+   }, 200);
+ });
 };
+
 
 
 $(document).ready(mainNav);
