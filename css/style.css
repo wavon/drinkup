@@ -56,7 +56,7 @@ header h1 {
   padding: 70px 14px 14px 14px;
   min-height: 100%;
   margin-bottom: -52px;
-  position: relative;
+  
   left: 0;
   margin: 0;
 }
@@ -86,7 +86,6 @@ Navigation styles
 /* Initial menu */
 .main-nav {
   left: -100em; /* start at negative left */
-  height: 100%;
   position: fixed;
   top: 70px;
   width: 180px;
@@ -154,19 +153,30 @@ Media queries
       font-size: 3em;
     }
 
+    header {
+        display: none;
+      }
+
     .logo {
       display: block;
+      position: fixed;
+      top: 5px;
+      left: 5px;
+      width: 200px;
+      height: 200px;
     }
 
     .main-nav {
+        
         left: 0; 
-        margin: 0 0s.5%;
+        margin: 230px 0.5%;
         max-width: 25%;
       }
 
     .main-container {
       left: 25%; 
-      max-width: 70%;
+      max-width: 65%;
+      position: fixed;
     }
 
     .icon-menu {
