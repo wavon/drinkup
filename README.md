@@ -3,7 +3,7 @@ drinkup
 
 #Mobile app of drink recipes
 
-##Responsive Design Assignment #1
+##Responsive Design Assignment #1.1
 
 Step 1 - Smart phone - portrait mode - no CSS, no JavaScript
 
@@ -27,14 +27,23 @@ If it is going to be a substantially different layout than "medium" landscape, y
 
 Single page site with at least 3 articles; must accommodate at least 20 or more articles. Articles are not limited in number of paragraphs.
 
-No images.
+1.1 Client revisions (images)
 
-Logo must be SVG format and 75x75px without styling. Version 2: 100x100px. Version 3: 200x200px.
+Step 4 - Add responsive images to all articles.
+
+1. Use small, cropped images for html-only and mobile versions
+2. Use larger images for larger layouts
+3. Use media queries to manage the two layouts
+4. Use fluid image layout to deal with device variations within different devices
+
+Logo should be SVG format and 75x75px without any styling. In the "small" mobile version, it should be 100x100. In the "medium" mobile, it should be 200x200.
 
 The page title is used differently in all three layouts. See the wireframes for details.
 
 The articles should scroll, but no scroll bar should appear. They are too small a target for mobile use. On a device, you should be able to flick them up and down easily and use the nav menu to jump to any article.
 
 Test your work using Chrome Developer Tools in "device mode."
+
+https://developer.chrome.com/devtools/docs/device-mode
 
 Feel free to use real devices to test your site when it is live on the web.
