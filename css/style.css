@@ -1,32 +1,38 @@
 /* ========================
 General styles
 ======================== */
+/* line 4, ../scss/style.scss */
 * {
   box-sizing: border-box;
 }
 
+/* line 8, ../scss/style.scss */
 html, body {
   height: 100%;
 }
 
+/* line 12, ../scss/style.scss */
 html {
-   font-size: 100%;
-   line-height: 1;
-   -moz-text-size-adjust: 100%;
-   -ms-text-size-adjust: 100%;
-   -webkit-text-size-adjust: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
+/* line 20, ../scss/style.scss */
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  background-color: rgb(249, 240, 207);
+  background-color: #f9f0cf;
 }
 
+/* line 25, ../scss/style.scss */
 h2 {
   margin-top: 1.4em;
   margin-bottom: 0;
 }
 
+/* line 30, ../scss/style.scss */
 p {
   font-size: 1em;
   line-height: 1.6em;
@@ -34,16 +40,18 @@ p {
   margin-bottom: 0;
 }
 
+/* line 37, ../scss/style.scss */
 header {
   position: fixed;
   top: 0;
   left: 0;
   height: 60px;
   width: 100%;
-  background: rgb(244, 122, 7);
+  background: #f47a07;
   z-index: 1;
 }
 
+/* line 47, ../scss/style.scss */
 header h1 {
   color: #fff;
   text-align: center;
@@ -52,6 +60,7 @@ header h1 {
 }
 
 /* section with main article content */
+/* line 55, ../scss/style.scss */
 .main-container {
   padding: 70px 14px 14px 14px;
   min-height: 100%;
@@ -61,65 +70,79 @@ header h1 {
   margin: 0;
 }
 
+/* line 64, ../scss/style.scss */
 .picture {
   border-radius: 10%;
   height: 32px;
-    width: 32px;
-    margin: 6px 10px 0 2px;
-    float: left;
+  width: 32px;
+  margin: 6px 10px 0 2px;
+  float: left;
 }
 
+/* line 72, ../scss/style.scss */
 article {
   overflow: hidden;
 }
 
+/* line 76, ../scss/style.scss */
 .logo {
   width: 100px;
   height: 100px;
 }
 
-
 /* ========================
 Navigation styles
 ======================== */
-
 /* Initial menu */
+/* line 87, ../scss/style.scss */
 .main-nav {
-  left: -100em; /* start at negative left */
+  left: -100em;
+  /* start at negative left */
   position: fixed;
   top: 70px;
   width: 180px;
 }
 
-nav li {
-   list-style: none;
-   font-size: 1.2em;
-   padding-bottom: 1.2em;
+/* line 94, ../scss/style.scss */
+.main-nav2 {
+  display: none;
 }
 
+/* line 99, ../scss/style.scss */
+nav li {
+  list-style: none;
+  font-size: 1.2em;
+  padding-bottom: 1.2em;
+}
+
+/* line 105, ../scss/style.scss */
 a {
   text-decoration: none;
   color: #40b2a8;
 }
 
+/* line 110, ../scss/style.scss */
 a:hover {
   color: #249393;
   font-weight: 600;
 }
 
+/* line 115, ../scss/style.scss */
 a:visited {
-  color: #40b2a8; 
+  color: #40b2a8;
 }
 
 /* footer nav icon container */
+/* line 120, ../scss/style.scss */
 .icon-menu {
   height: 52px;
-  background-color: rgb(59, 200, 186);
+  background-color: #3bc8ba;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
 
+/* line 128, ../scss/style.scss */
 .icon-menu p {
   font-size: 1.2em;
   font-family: "Open Sans";
@@ -130,66 +153,72 @@ a:visited {
   margin-top: 0;
 }
 
+/* line 138, ../scss/style.scss */
 .icon-menu span {
   font-size: 1em;
   color: #fff;
   margin-right: .5em;
 }
 
-
-
-
-
 /* ========================
 Media queries
 ======================== */
-
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) {
+  /* line 153, ../scss/style.scss */
   body {
-      font-size: 110%;
-      }
-  
-    h1 {
-      font-size: 3em;
-    }
+    font-size: 110%;
+  }
 
-    header {
-        display: none;
-      }
+  /* line 157, ../scss/style.scss */
+  h1 {
+    font-size: 3em;
+  }
 
-    .logo {
-      display: block;
-      position: fixed;
-      top: 5px;
-      left: 5px;
-      width: 200px;
-      height: 200px;
-    }
+  /* line 161, ../scss/style.scss */
+  header {
+    display: none;
+  }
 
-    .main-nav {
-        
-        left: 0; 
-        margin: 230px 0.5%;
-        max-width: 25%;
-      }
+  /* line 165, ../scss/style.scss */
+  .logo {
+    display: block;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 200px;
+    height: 200px;
+  }
 
-    .main-container {
-      left: 25%; 
-      max-width: 65%;
-      position: relative;
-    }
+  /* line 175, ../scss/style.scss */
+  .main-nav2 {
+    position: fixed;
+    top: 40px;
+    width: 180px;
+    left: 0;
+    margin: 230px 0.5%;
+    min-width: 25%;
+    display: block;
+  }
 
-    .icon-menu {
-      display: none;
-    }
+  /* line 185, ../scss/style.scss */
+  .main-nav, .icon-menu {
+    display: none;
+  }
 
-    .picture {
+  /* line 189, ../scss/style.scss */
+  .main-container {
+    left: 25%;
+    max-width: 65%;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  /* line 196, ../scss/style.scss */
+  .picture {
     border-radius: 10%;
     height: 200px;
     width: 200px;
     margin: 6px 10px 0 2px;
     float: right;
+  }
 }
-
-}
-  
