@@ -52,13 +52,24 @@ header h1 {
 }
 
 /* section with main article content */
-.main-container {
-  padding: 70px 14px 14px 14px;
+.main-container, {
+  padding: 50px 14px 14px 14px;
   min-height: 100%;
   margin-bottom: -52px;
   position: relative;
   left: 0;
   margin: 0;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 65px;
+}
+
+.title {
+ display: none;
 }
 
 .picture {
@@ -73,10 +84,7 @@ article {
   overflow: hidden;
 }
 
-.logo {
-  width: 100px;
-  height: 100px;
-}
+
 
 
 /* ========================
@@ -162,23 +170,35 @@ Media queries
         display: none;
       }
 
-    .logo {
-      display: block;
-      position: fixed;
-      top: 5px;
-      left: 5px;
-      width: 200px;
-      height: 200px;
-    }
+.logo {
+     display: block;
+     position: fixed;
+     top: 5px;
+     left: 5px;
+     width: 200px;
+     height: 200px;
+
+   }
+
+   .title {
+     display: block;
+     position: relative;
+     z-index: 1;
+     top: 50px;
+     left: 152px;
+     color: black;
+
+
+   }
 
 
     .main-nav2 {
         position: fixed;
         top: 40px;
-        width: 180px;
+        width: 150px;
         left: 0; 
         margin: 230px 0.5%;
-        min-width: 25%;
+        min-width: 20%;
         display: block;
       }
 
@@ -187,10 +207,11 @@ Media queries
   }
 
     .main-container {
-      left: 25%; 
-      max-width: 65%;
+      left: 15%; 
+      max-width: 75%;
       position: relative;
       margin-top: 100px;
+      margin-left: 40px;
     }
 
     .picture {
