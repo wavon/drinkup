@@ -1,17 +1,17 @@
 /* ========================
 General styles
 ======================== */
-/* line 4, ../scss/style.scss */
+/* line 8, ../scss/style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 8, ../scss/style.scss */
+/* line 12, ../scss/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 12, ../scss/style.scss */
+/* line 16, ../scss/style.scss */
 html {
   font-size: 100%;
   line-height: 1;
@@ -20,19 +20,19 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 20, ../scss/style.scss */
+/* line 24, ../scss/style.scss */
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   background-color: #f9f0cf;
 }
 
-/* line 25, ../scss/style.scss */
+/* line 29, ../scss/style.scss */
 h2 {
   margin-top: 1.4em;
   margin-bottom: 0;
 }
 
-/* line 30, ../scss/style.scss */
+/* line 34, ../scss/style.scss */
 p {
   font-size: 1em;
   line-height: 1.6em;
@@ -40,7 +40,7 @@ p {
   margin-bottom: 0;
 }
 
-/* line 37, ../scss/style.scss */
+/* line 41, ../scss/style.scss */
 header {
   position: fixed;
   top: 0;
@@ -51,7 +51,7 @@ header {
   z-index: 1;
 }
 
-/* line 47, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 header h1 {
   color: #fff;
   text-align: center;
@@ -60,7 +60,7 @@ header h1 {
 }
 
 /* section with main article content */
-/* line 55, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 .main-container {
   padding: 50px 14px 14px 14px;
   min-height: 100%;
@@ -70,20 +70,20 @@ header h1 {
   margin: 0;
 }
 
-/* line 64, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 .logo {
   width: 100px;
   height: 100px;
   position: relative;
-  top: 65px;
+  top: 70px;
 }
 
-/* line 71, ../scss/style.scss */
+/* line 75, ../scss/style.scss */
 .title {
   display: none;
 }
 
-/* line 75, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .picture {
   border-radius: 10%;
   height: 32px;
@@ -92,7 +92,7 @@ header h1 {
   float: left;
 }
 
-/* line 83, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 article {
   overflow: hidden;
 }
@@ -101,46 +101,46 @@ article {
 Navigation styles
 ======================== */
 /* Initial menu */
-/* line 95, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 .main-nav {
   left: -100em;
   /* start at negative left */
   position: fixed;
-  top: 70px;
+  top: 170px;
   width: 180px;
 }
 
-/* line 102, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 .main-nav2 {
   display: none;
 }
 
-/* line 107, ../scss/style.scss */
+/* line 111, ../scss/style.scss */
 nav li {
   list-style: none;
   font-size: 1.2em;
   padding-bottom: 1.2em;
 }
 
-/* line 113, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 a {
   text-decoration: none;
   color: #40b2a8;
 }
 
-/* line 118, ../scss/style.scss */
+/* line 122, ../scss/style.scss */
 a:hover {
   color: #249393;
   font-weight: 600;
 }
 
-/* line 123, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 a:visited {
   color: #40b2a8;
 }
 
 /* footer nav icon container */
-/* line 128, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 .icon-menu {
   height: 52px;
   background-color: #3bc8ba;
@@ -149,7 +149,7 @@ a:visited {
   width: 100%;
 }
 
-/* line 136, ../scss/style.scss */
+/* line 140, ../scss/style.scss */
 .icon-menu p {
   font-size: 1.2em;
   font-family: "Open Sans";
@@ -160,7 +160,7 @@ a:visited {
   margin-top: 0;
 }
 
-/* line 146, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 .icon-menu span {
   font-size: 1em;
   color: #fff;
@@ -171,22 +171,22 @@ a:visited {
 Media queries
 ======================== */
 @media screen and (min-width: 668px) {
-  /* line 161, ../scss/style.scss */
+  /* line 165, ../scss/style.scss */
   body {
     font-size: 110%;
   }
 
-  /* line 165, ../scss/style.scss */
+  /* line 169, ../scss/style.scss */
   h1 {
     font-size: 3em;
   }
 
-  /* line 169, ../scss/style.scss */
-  header {
+  /* line 173, ../scss/style.scss */
+  header, .main-nav, .icon-menu {
     display: none;
   }
 
-  /* line 173, ../scss/style.scss */
+  /* line 177, ../scss/style.scss */
   .logo {
     display: block;
     position: fixed;
@@ -196,7 +196,7 @@ Media queries
     height: 200px;
   }
 
-  /* line 183, ../scss/style.scss */
+  /* line 187, ../scss/style.scss */
   .title {
     display: block;
     position: relative;
@@ -206,7 +206,7 @@ Media queries
     color: black;
   }
 
-  /* line 195, ../scss/style.scss */
+  /* line 196, ../scss/style.scss */
   .main-nav2 {
     position: fixed;
     top: 40px;
@@ -217,12 +217,7 @@ Media queries
     display: block;
   }
 
-  /* line 205, ../scss/style.scss */
-  .main-nav, .icon-menu {
-    display: none;
-  }
-
-  /* line 209, ../scss/style.scss */
+  /* line 206, ../scss/style.scss */
   .main-container {
     left: 15%;
     max-width: 75%;
@@ -231,12 +226,42 @@ Media queries
     margin-left: 40px;
   }
 
-  /* line 217, ../scss/style.scss */
+  /* line 214, ../scss/style.scss */
   .picture {
     border-radius: 10%;
     height: 200px;
     width: 200px;
     margin: 6px 10px 0 2px;
     float: right;
+  }
+
+  /* line 222, ../scss/style.scss */
+  #pic1 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie1md.jpg);
+  }
+
+  /* line 225, ../scss/style.scss */
+  #pic2 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie2md.jpg);
+  }
+
+  /* line 228, ../scss/style.scss */
+  #pic3 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie3md.jpg);
+  }
+
+  /* line 231, ../scss/style.scss */
+  #pic4 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie4md.jpg);
+  }
+
+  /* line 234, ../scss/style.scss */
+  #pic5 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie5md.jpg);
+  }
+
+  /* line 237, ../scss/style.scss */
+  #pic6 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie6md.jpg);
   }
 }
