@@ -1,3 +1,7 @@
+@mixin hide{
+    display: none;
+}
+
 /* ========================
 General styles
 ======================== */
@@ -65,11 +69,11 @@ header h1 {
   width: 100px;
   height: 100px;
   position: relative;
-  top: 65px;
+  top: 70px;
 }
 
 .title {
- display: none;
+ @include hide;
 }
 
 .picture {
@@ -95,12 +99,12 @@ Navigation styles
 .main-nav {
   left: -100em; /* start at negative left */
   position: fixed;
-  top: 70px;
+  top: 170px;
   width: 180px;
 }
 
 .main-nav2 {
-  display: none;
+  @include hide;
 }
 
 
@@ -166,11 +170,11 @@ Media queries
       font-size: 3em;
     }
 
-    header {
-        display: none;
-      }
+  header, .main-nav, .icon-menu {
+    @include hide;
+    }
 
-.logo {
+  .logo {
      display: block;
      position: fixed;
      top: 5px;
@@ -187,24 +191,17 @@ Media queries
      top: 50px;
      left: 152px;
      color: black;
-
-
    }
 
-
     .main-nav2 {
-        position: fixed;
-        top: 40px;
-        width: 150px;
-        left: 0; 
-        margin: 230px 0.5%;
-        min-width: 20%;
-        display: block;
-      }
-
-    .main-nav, .icon-menu {
-    display: none;
-  }
+      position: fixed;
+      top: 40px;
+      width: 150px;
+      left: 0; 
+      margin: 230px 0.5%;
+      min-width: 20%;
+      display: block;
+    }
 
     .main-container {
       left: 15%; 
@@ -215,15 +212,31 @@ Media queries
     }
 
     .picture {
-    border-radius: 10%;
-    height: 200px;
-    width: 200px;
-    margin: 6px 10px 0 2px;
-    float: right;
+      border-radius: 10%;
+      height: 200px;
+      width: 200px;
+      margin: 6px 10px 0 2px;
+      float: right;
 }
 
-
-
+  #pic1 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie1md.jpg);
+  }
+  #pic2 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie2md.jpg);
+  }
+  #pic3 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie3md.jpg);
+  }
+  #pic4 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie4md.jpg);
+  }
+  #pic5 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie5md.jpg);
+  }
+  #pic6 {
+    content: url(http://wavon.github.io/drinkup/img/smoothie6md.jpg);
+  }
 
 }
   
