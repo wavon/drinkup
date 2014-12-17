@@ -161,6 +161,8 @@ a:visited {
 Media queries
 ======================== */
 
+
+
 @media screen and (min-width: 668px){
   body {
       font-size: 110%;
@@ -192,6 +194,10 @@ Media queries
      left: 152px;
      color: black;
    }
+
+   .main-nav {
+  @include hide;
+}
 
     .main-nav2 {
       position: fixed;

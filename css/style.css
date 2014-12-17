@@ -171,22 +171,22 @@ a:visited {
 Media queries
 ======================== */
 @media screen and (min-width: 668px) {
-  /* line 165, ../scss/style.scss */
+  /* line 167, ../scss/style.scss */
   body {
     font-size: 110%;
   }
 
-  /* line 169, ../scss/style.scss */
+  /* line 171, ../scss/style.scss */
   h1 {
     font-size: 3em;
   }
 
-  /* line 173, ../scss/style.scss */
+  /* line 175, ../scss/style.scss */
   header, .main-nav, .icon-menu {
     display: none;
   }
 
-  /* line 177, ../scss/style.scss */
+  /* line 179, ../scss/style.scss */
   .logo {
     display: block;
     position: fixed;
@@ -196,7 +196,7 @@ Media queries
     height: 200px;
   }
 
-  /* line 187, ../scss/style.scss */
+  /* line 189, ../scss/style.scss */
   .title {
     display: block;
     position: relative;
@@ -206,7 +206,12 @@ Media queries
     color: black;
   }
 
-  /* line 196, ../scss/style.scss */
+  /* line 198, ../scss/style.scss */
+  .main-nav {
+    display: none;
+  }
+
+  /* line 202, ../scss/style.scss */
   .main-nav2 {
     position: fixed;
     top: 40px;
@@ -217,7 +222,7 @@ Media queries
     display: block;
   }
 
-  /* line 206, ../scss/style.scss */
+  /* line 212, ../scss/style.scss */
   .main-container {
     left: 15%;
     max-width: 75%;
@@ -226,7 +231,7 @@ Media queries
     margin-left: 40px;
   }
 
-  /* line 214, ../scss/style.scss */
+  /* line 220, ../scss/style.scss */
   .picture {
     border-radius: 10%;
     height: 200px;
@@ -235,32 +240,32 @@ Media queries
     float: right;
   }
 
-  /* line 222, ../scss/style.scss */
+  /* line 228, ../scss/style.scss */
   #pic1 {
     content: url(http://wavon.github.io/drinkup/img/smoothie1md.jpg);
   }
 
-  /* line 225, ../scss/style.scss */
+  /* line 231, ../scss/style.scss */
   #pic2 {
     content: url(http://wavon.github.io/drinkup/img/smoothie2md.jpg);
   }
 
-  /* line 228, ../scss/style.scss */
+  /* line 234, ../scss/style.scss */
   #pic3 {
     content: url(http://wavon.github.io/drinkup/img/smoothie3md.jpg);
   }
 
-  /* line 231, ../scss/style.scss */
+  /* line 237, ../scss/style.scss */
   #pic4 {
     content: url(http://wavon.github.io/drinkup/img/smoothie4md.jpg);
   }
 
-  /* line 234, ../scss/style.scss */
+  /* line 240, ../scss/style.scss */
   #pic5 {
     content: url(http://wavon.github.io/drinkup/img/smoothie5md.jpg);
   }
 
-  /* line 237, ../scss/style.scss */
+  /* line 243, ../scss/style.scss */
   #pic6 {
     content: url(http://wavon.github.io/drinkup/img/smoothie6md.jpg);
   }
